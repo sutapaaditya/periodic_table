@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+
+    /**/
+    /* font-family: 'Yeseva One', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  /* background-color: #FFC914; */
+  background-color: #ffe89c;
+  color: #011627;
+}
+
+.main {
+  max-width: 1200px;
+  width: 60%;
+  margin: 1.5rem auto;  
+}
+
+.topic {
+  font-family: 'Yeseva One', cursive;
+  background-color: #ffdd69;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  border: .5px solid #ad8500;
+}
+
+.elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.element {
+  border: .5px solid goldenrod;
+  padding: 1rem;
+  margin-right: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.element:hover {
+  background-color: #ffdd69;
+}
+
+.atomic-number {
+  font-size: .75rem;
+}
+
+.symbol {
+  font-size: 2rem;
+}
+
+.element-details {
+  margin-top: 10px;
+  padding: 5px;
+
+  background-color: #fff0be;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+}
+
+
+.element-details img {
+  width: 200px;
+}
+
+.details {
+  margin-left: 15px;
+  font-size: 15px;
+}
