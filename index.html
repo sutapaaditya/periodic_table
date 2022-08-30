@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Learning JS</title>
+    <title>Periodic Table</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
     <main class="main">
-      <p class="topic">My Periodic Table</p>
-      <div class="elements">
-        <!-- element starts -->
-        <div class="element" id="h">
-          <div class="atomic-number">1</div>
-          <div class="symbol">H</div>
-        </div>
-        <!-- element ends -->
-        <!-- element starts -->
-        <div class="element" id="he">
-          <div class="atomic-number">2</div>
-          <div class="symbol">He</div>
-        </div>
-        <!-- element ends -->
-        <!-- element starts -->
-        <div class="element">
-          <div class="atomic-number">3</div>
-          <div class="symbol">Li</div>
-        </div>
-        <!-- element ends -->
-        <!-- element starts -->
-        <div class="element">
-          <div class="atomic-number">4</div>
-          <div class="symbol">Be</div>
-        </div>
-        <!-- element ends -->
-        <!-- element starts -->
-        <div class="element">
-          <div class="atomic-number">5</div>
-          <div class="symbol">B</div>
-        </div>
-        <!-- element ends -->
-        <!-- element starts -->
-        <div class="element">
-          <div class="atomic-number">6</div>
-          <div class="symbol">C</div>
-        </div>
-        <!-- element ends -->
-      </div>
-        <!-- element details -->
-        <div class="element-details">
-          <img src="https://thumbs.dreamstime.com/z/green-hydrogen-energy-symbol-leaf-texture-ecological-concept-sustainable-alternative-to-fossil-fuels-211499487.jpg" alt="Hydrogen">
-          <p class="details">
-          Named after the Greek words hydro for "water" and genes for "forming," hydrogen makes up more than 90 percent of all of the atoms, which equals three quarters of the mass of the universe, according to the Los Alamos National Laboratory. Hydrogen is essential for life, and it is present in nearly all the molecules in living things, according to the Royal Society of Chemistry. The element also occurs in the stars and powers the universe through the proton-proton reaction and carbon-nitrogen cycle. Stellar hydrogen fusion processes release huge amounts of energy as they combine hydrogen atoms to form helium, according to Los Alamos.
-          </p>
-        </div>
-        <!-- element details ends -->
-        <div class="element-details" id="helium-details">
-          <img src="https://www.thoughtco.com/thmb/70hFdbVWCssrJDWO0MuOFK5ox40=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/helium-chemical-element-186450990-579fadf23df78c3276bace84.jpg" alt="helium">
-          <p class="details">
-          Helium is colorless, odorless, tasteless, non-toxic, and inert. Of all the elements, helium is the least reactive, so it does not form compounds under ordinary conditions. In order to bond it to another element, it would need to be ionized or pressurized. Under high pressure, disodium helide (HeNa2), the clathrate-like titanate La2/3-xLi3xTiO3He, the silicate crystobalite He II (SiO2He), dihelium arsenolite (AsO6·2He), and NeHe2 may exist
-          </p>
-        </div>
-
+    <h1 class="title">Periodic Table</h1>
     </main>
+    <div class="container">
+      <div class="n-element pink-border">
+        <div class="box-head">
+          <p>1</p>
+          <p>-1, +1</p>
+        </div>
+        <div class="box-content" id="h">
+          H
+        </div>
+        <div class="box-footer">
+          Hydrogen
+        </div>
+      </div>
+      <!-- element ends here -->
+      <div class="n-element green-border">
+        <div class="box-head">
+          <p>2</p>
+          <p>0</p>
+        </div>
+        <div class="box-content" id="he">
+          He
+        </div>
+        <div class="box-footer">
+          Helium
+        </div>
+      </div>
+      <!-- element ends here -->
+      <div class="n-element pink-border">
+        <div class="box-head">
+          <p>3</p>
+          <p>+1</p>
+        </div>
+        <div class="box-content">
+          Li
+        </div>
+        <div class="box-footer">
+          Lithium
+        </div>
+      </div>
+      <!-- element ends here -->
+      <div class="n-element green-border">
+        <div class="box-head">
+          <p>4</p>
+          <p>+2</p>
+        </div>
+        <div class="box-content">
+          Be
+        </div>
+        <div class="box-footer">
+          Beryllium
+        </div>
+      </div>
+      <!-- element ends here -->
+      <div class="n-element pink-border">
+        <div class="box-head">
+          <p>5</p>
+          <p>+3</p>
+        </div>
+        <div class="box-content">
+          B
+        </div>
+        <div class="box-footer">
+          Boron
+        </div>
+      </div>
+      <!-- element ends here -->
+    </div>
+      <section class="element-details">
+      </section>
   
+      
+    <script src="js/data.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

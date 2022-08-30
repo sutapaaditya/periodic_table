@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  color: #DAF5FF;
+  background-color: #F5EE9E;
+}
+
+.main, .container, .element-details {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 1100px;
+}
+
+.main {
+  background-color: #ede151;
+}
+
+.title {
+  margin-left: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Yeseva One', cursive;
+  color: #001514;
+}
+
+.n-element {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-right: 1rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  color: #020122;
+}
+
+.box-head {
+  font-size: .75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-content {
+  align-self: center;
+  font-size: 5rem;
+}
+
+.box-footer {
+  align-self: center;
+  font-size: .75rem;
+}
+
+.container {
+  display: flex;
+}
+
+.green-border {
+  border: 5px solid #00635D;
+}
+
+.pink-border {
+  border: 5px solid #FF69EB;
+}
+
+.element-details {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+
+  color: black;
+  border: 1px solid #494408;
+  padding: 2%;
+  background-color: #f5ee9e;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.element-details img {
+  width: 300px;
+}
+
+.element-details p {
+  margin-left: 20px;
+}
+
