@@ -1,33 +1,37 @@
-let showDetails = (m) => {
-  let el = '';
+let showDetails = (iSrc='', pText='') => {
   let r = document.querySelector('.element-details');
   r.style.display = "flex";
-
+  r.style.color = "initial";
   // following code removes the previous image and paragraph text
   if (r.hasChildNodes()) {
     r.innerHTML = '';
   }
 
-  data.forEach(element => {
-    if (Object.keys(element)[0] === m) {
-      el = element;
-    }
-  });
-
-  if (el) {
+  if (iSrc && pText) {
     let i = new Image();
-    i.src = el[m][0];
+    i.src = iSrc;
     r.append(i);
     let p = document.createElement('p');
-    p.textContent = el[m][1];
+    p.textContent = pText;
     r.append(p);
   } else {
-    r.textContent = "Data not available !";
+      r.style.color = "#ff4000";
+      r.textContent = "Data Not Available !";
   }
 }
 
-let n = document.querySelectorAll('.n-element');
-n.forEach(e => e.addEventListener('click', () => {
-  let m = e.children[2].textContent.trim();
-  showDetails(m);
-}));
+document.body.addEventListener('click', (ev) => {
+  if (ev.target.className === "box-content" || ev.target.className === "box-footer") {
+    let e = ev.target.parentElement;
+    let i = parseInt(e.children[0].children[0].innerText);
+    i = i-1;
+    let el = data[i];
+    if (el) {
+      let iSrc = Object.values(el)[0][0];
+      let pText = Object.values(el)[0][1];
+      showDetails(iSrc, pText);
+    } else {
+      showDetails('','');
+    }
+  }
+})
