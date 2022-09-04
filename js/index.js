@@ -2,7 +2,6 @@
 let showResult = (details) => {
   let myDiv = document.querySelector(".element-details");
   myDiv.style.display = "flex";
-  myDiv.style.color = "initial";
 
   if (myDiv.hasChildNodes()) {
     myDiv.innerHTML = '';
@@ -10,16 +9,18 @@ let showResult = (details) => {
 
 
   if (details) {
-  let i = new Image;
-  i.src = details[0];
-  myDiv.append(i);
+    let i = new Image;
+    i.src = details[0];
+    myDiv.append(i);
 
-  let p = document.createElement('p');
-  p.textContent = details[1];
-  myDiv.append(p);
+    let p = document.createElement('p');
+    p.textContent = details[1];
+    myDiv.append(p);
   } else {
-    myDiv.style.color = "#ff4000";
-    myDiv.textContent = "Data not available !";
+    let p = document.createElement('p');
+    p.style.color = "#ff4000";
+    p.textContent = "Data not available !";
+    myDiv.append(p);
   }
 
 }
